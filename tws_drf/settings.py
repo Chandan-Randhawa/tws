@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-^vl%1#w^ms%x2yycz=ck3+e&6ts%%ej^0v-xf75(s0)-@(5a=l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -78,6 +78,7 @@ WSGI_APPLICATION = 'tws_drf.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 load_dotenv()
+
 DATABASES = {
     'default': {
         'ENGINE': os.environ.get('ENGINE'),
