@@ -1,0 +1,1 @@
+web: gunicorn tws_drf.wsgi --log-file -
